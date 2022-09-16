@@ -1,11 +1,8 @@
 body {
-    margin: 0
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
 }
 
-#circle1 {
-    left: 20px;
-    background: #EC6B5E;
-}
 
 .btn {
     display: none;
@@ -53,6 +50,30 @@ body {
     display: inline-block;
 }
 
+#name {
+    color: white;
+    margin: 0;
+    font-weight: normal;
+    font-size: 40px;
+}
+
+.intro {
+    color: #091E77;
+    padding-inline: 10px;
+}
+
+.intro p {
+    margin: 0;
+    font-size: 20px;
+    color: #446AC0
+}
+
+.w1 {
+    background: #091E77;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
 
 .circle {
     border-radius: 50%;
@@ -64,22 +85,6 @@ body {
     align-items: center;
 }
 
-#circle2 {
-    left: 50px;
-    background: #F3BD50;
-}
-
-#circle3 {
-    left: 80px;
-    background: #62C254;
-}
-
-#name {
-    color: white;
-    margin: 0;
-    font-weight: normal;
-    font-size: 40px;
-}
 
 .social-buttons {
     margin-top: 1rem;
@@ -108,17 +113,87 @@ body {
     text-decoration: none;
 }
 
-
-
 #canvas-basic {
     display: block;
     width: 100%;
     height: 100%;
     margin-inline: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
+.window {
+    position: absolute;
+    background: #03114F;
+    border-radius: 15px;
+}
+
+
 .bottom {
-    background: beige;
+    width: 70vw;
+    margin: auto;
+}
+
+.about-me p {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+.about-me h1 {
+    font-size: 34px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+
+.about-me .skill-tag {
+    background: #446AC0;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 2rem
+}
+
+.title-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.red {
+    background: #EC6B5E;
+    left: 20px;
+}
+
+.yellow {
+    background: #F3BD50;
+    left: 50px;
+}
+
+.green {
+    background: #62C254;
+    left: 80px;
 }
 
 @media screen and (max-width: 600px) {
@@ -149,25 +224,13 @@ body {
 
     .intro {
         margin-top: 3rem;
-        font-family: "DM Sans", sans-serif;
-        color: #091E77;
-        padding-inline: 10px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         margin-left: 5%;
     }
 
-    .intro p {
-        margin: 0;
-        font-size: 20px;
-        color: #446AC0
-    }
-
     .window {
-        position: absolute;
-        background: #03114F;
-        border-radius: 15px;
         width: 90vw;
         top: 8%;
         left: 5%;
@@ -176,10 +239,7 @@ body {
     }
 
     .w1 {
-        background: #091E77;
         height: 7vh;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
     }
     .header {
         height: 80vh;
@@ -192,25 +252,13 @@ body {
     .intro {
         margin-left: 23vw;
         margin-top: 2rem;
-        font-family: "DM Sans", sans-serif;
-        color: #091E77;
-        padding-inline: 10px;
-    }
-
-    .intro p {
-        margin: 0;
-        font-size: 20px;
-        color: #446AC0
     }
 
     .window {
-        position: absolute;
         left: 15%;
         top: 10%;
-        background: #03114F;
         width: 70vw;
         height: 35%;
-        border-radius: 15px;
         padding: 0;
     }
 
@@ -226,10 +274,7 @@ body {
     }
 
     .w1 {
-        background: #091E77;
         height: 6vh;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
     }
 
     .intro .pic {
@@ -254,7 +299,7 @@ body {
     .intro-text {
         margin-top: 0;
     }
-    
+
 }
 
 
